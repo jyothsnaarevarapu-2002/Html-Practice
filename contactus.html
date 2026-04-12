@@ -1,79 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Web Services Form</title>
-    <style>
-        body {
-            font-family: Arial;
-            background-color: #f2f2f2;
-        }
-        .form-container {
-            width: 400px;
-            margin: auto;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px gray;
-        }
-        h2 {
-            text-align: center;
-        }
-        label {
-            font-weight: bold;
-        }
-        input, select, textarea {
-            width: 100%;
-            padding: 8px;
-            margin: 8px 0;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <br></br>
-
-<div class="form-container">
-    <h2>Employee Web Services Form</h2>
-    
-    <form>
-        <label>Employee Name</label>
-        <input type="text" name="name" placeholder="Enter your name" required>
-
-        <label>Email</label>
-        <input type="email" name="email" placeholder="Enter your email" required>
-
-        <label>Department</label>
-        <select name="department">
-            <option>HR</option>
-            <option>IT</option>
-            <option>Finance</option>
-            <option>Marketing</option>
-        </select>
-
-        <label>Service Required</label>
-        <select name="service">
-            <option>Web Development</option>
-            <option>Website Maintenance</option>
-            <option>Bug Fixing</option>
-            <option>Hosting Support</option>
-        </select>
-
-        <label>Description</label>
-        <textarea name="description" rows="4" placeholder="Enter your request"></textarea>
-
-        <input type="submit" value="Submit">
-    </form>
+<body class="form-page">
+<div id="header" class="site-header">
+<h1 class="site-title">Welcome to Drupal Techies</h1>
+<ul class="site-nav">
+<li><a href="home.html">Home</a></li>
+<li><a href="aboutus.html">About Us</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contactus.html">Contact Us</a></li>
+</ul>
 </div>
-
+<div class="form-container">
+<h2 class="form-title">Employee Web Services Form</h2>
+<form>
+<label>Employee Name</label>
+<input type="text" name="name" placeholder="Enter your name" required>
+<label>Email</label>
+<input type="email" name="email" placeholder="Enter your email" required>
+<label>Department</label>
+<select name="department">
+<option>HR</option>
+<option>IT</option>
+<option>Finance</option>
+<option>Marketing</option>
+</select>
+<label>Service Required</label>
+<select name="service">
+<option>Web Development</option>
+<option>Website Maintenance</option>
+<option>Bug Fixing</option>
+<option>Hosting Support</option>
+</select>
+<label>Description</label>
+<textarea name="description" rows="4" placeholder="Enter your request"></textarea>
+<input type="submit" value="Submit">
+</form>
+</div>
+<div class="site-footer footer-blue">
+<p>All rights are reserved by 2026</p>
+</div>
 </body>
 </html>
